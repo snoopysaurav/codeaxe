@@ -1,0 +1,12 @@
+:root {
+  --arial: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  box-sizing: border-box;
+  font: var(--arial);
+}
+
+body {
+  margin: 0;
+}

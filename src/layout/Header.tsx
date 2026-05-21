@@ -1,4 +1,4 @@
-import PrimaryButton from "../components/buttons/PrimaryButton";
+import PrimaryButton from "@/components/buttons/PrimaryButton";
 
 const Header = () => {
   const menus: Array<string> = [

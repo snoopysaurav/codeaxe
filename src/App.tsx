@@ -1,12 +1,11 @@
-import PrimaryButton from "./components/buttons/PrimaryButton"
-
+import { RouterProvider } from "react-router";
+import { routes } from "@/routes/Routes";
 const App = () => {
   return (
     <>
-      <div>This is an app component</div>
-      <PrimaryButton>yoyoyo</PrimaryButton>
+      <RouterProvider router={routes} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

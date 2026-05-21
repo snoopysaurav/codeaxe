@@ -1,12 +1,115 @@
+@import "tailwindcss";
+
 :root {
-  --arial: Arial, Helvetica, sans-serif;
+  --text-primary: #FAF9F5;
+  --text-secondary: #87867F;
+  --text-tertiary: #6B6755;
+  --text-accent: #E89272;
+  --text-accentDeep: #DA7756;
+  --test-inverse-primary: #141413;
+
+  --bg-page: #141413;
+  --bg-surface: #1F1E1D;
+  --bg-elevated: #30302E;
+  --bg-subtle: #87867F;
+  --bg-accent: #C44C2A;
+  --bg-accentSubtle: #2E1E16;
+  --bg-inverseSurface: #FAF9F5;
+
+  --border-default: #30302E;
+  --border-emphasis: #3D3D3A;
+  --border-strong: #625D52;
+  --border-accent: #C44C2A;
 }
+
+.dark {
+  --text-primary: #141413;
+  --text-secondary: #5E5D59;
+  --text-tertiary: #9E9A89;
+  --text-accent: #DA7756;
+  --text-accentDeep: #BD5D3A;
+  --text-inversePrimary: #FAF9F5;
+
+  --bg-page: #FAF9F5;
+  --bg-surface: #F0EEE6;
+  --bg-elevated: #FFFFFF;
+  --bg-subtle: #87867F;
+  --bg-accent: #DA7756;
+  --bg-accentSubtle: #F5EDE7;
+  --bg-inverseSurface: #141413;
+
+  --border-default:#E8E6DC;
+  --border-emphasis: #D1CFC5;
+  --border-strong: #A39E88;
+  --border-accent: #DA7756;
+
+}
+
+@theme{
+
+  /* text color */
+  --color-text-primary : var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-accent: var(--text-accent);
+  --color-text-accentDeep: var(--text-accentDeep);
+  --color-text-inversePrimary: var(--text-inversePrimary);
+
+  /* background color */
+  --color-bg-page: var(--bg-page);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-subtle: var(--bg-subtle);  
+  --color-bg-accent:var(--bg-accent);
+  --color-bg-inverseSurface: var(--bg-inverseSurface);
+
+  /* border color */
+  --color-border-default: var(--border-default);
+  --color-border-emphasis: var(--border-emphasis);
+  --color-border-strong: var(--border-strong);
+  --color-border-accent: var(--border-accent);
+
+  /* custom shadow */
+  --shadow-white: 0px 0px 0px 6px rgba(255, 255, 255, 0.2)
+}
+
+
 
 #root {
   box-sizing: border-box;
-  font: var(--arial);
 }
 
 body {
   margin: 0;
+  background-color: var(--color-bg-page);
+}
+
+h1{
+  font-size: 56px;
+  line-height: 100%;
+}
+
+h2{
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h3{
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h4{
+  font-size: 24px;
+  line-height: 28px; 
+}
+
+h5{
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h6{
+  font-size: 18px;
+  line-height: 20px;
 }

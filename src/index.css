@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* dark theme */
 :root {
   --text-primary: #FAF9F5;
   --text-secondary: #87867F;
@@ -22,7 +23,8 @@
   --border-accent: #C44C2A;
 }
 
-.dark {
+/* light theme */
+[data-theme="light"] {
   --text-primary: #141413;
   --text-secondary: #5E5D59;
   --text-tertiary: #9E9A89;
@@ -38,15 +40,13 @@
   --bg-accentSubtle: #F5EDE7;
   --bg-inverseSurface: #141413;
 
-  --border-default:#E8E6DC;
+  --border-default: #E8E6DC;
   --border-emphasis: #D1CFC5;
   --border-strong: #A39E88;
   --border-accent: #DA7756;
-
 }
 
 @theme{
-
   /* text color */
   --color-text-primary : var(--text-primary);
   --color-text-secondary: var(--text-secondary);
@@ -72,8 +72,6 @@
   /* custom shadow */
   --shadow-white: 0px 0px 0px 6px rgba(255, 255, 255, 0.2)
 }
-
-
 
 #root {
   box-sizing: border-box;

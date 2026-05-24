@@ -9,9 +9,9 @@ const Header = () => {
     "FAQ",
   ];
   return (
-    <header className="w-full">
-      <div className="px-12 py-5 max-w-360 max-h-20 flex flex-row items-center justify-between mx-auto">
-        <nav className="w-full flex flex-row items-center justify-between">
+    <header className="w-full sticky top-0 bg-bg-page z-20">
+      <div className="px-12 py-5 max-w-360 flex flex-col md:flex-row items-center   justify-between mx-auto">
+        <nav className="w-full flex flex-col md:flex-row items-center justify-between">
           {/* Logo container */}
           <div>
             {/* codeaxe logo svg code */}
@@ -54,7 +54,7 @@ const Header = () => {
           </div>
           {/* Menu */}
           <div className=" text-text-secondary mx-auto">
-            <ul className="flex flex-row gap-10 text-base">
+            <ul className="flex flex-col md:flex-row gap-10 text-base">
               {menus.map((menu: string) => (
                 <li
                   key={menu}

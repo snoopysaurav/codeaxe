@@ -1,12 +1,19 @@
+import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 
 type PrimaryButtonProps = {
   children: ReactNode;
+  classname: object | string;
 };
 
-const PrimaryButton = ({ children }: PrimaryButtonProps) => {
+const PrimaryButton = ({ children, classname }: PrimaryButtonProps) => {
   return (
-    <button className="rounded-lg py-2.5 px-3 bg-bg-inverseSurface text-base font-medium text-text-inversePrimary cursor-pointer hover:shadow-white transition-all delay-50 ease-in-out ">
+    <button
+      className={cn(
+        "rounded-lg py-2.5 px-3 bg-bg-inverseSurface text-base font-medium text-text-inversePrimary cursor-pointer hover:shadow-white transition-all delay-50 ease-in-out",
+        classname,
+      )}
+    >
       {children}
     </button>
   );

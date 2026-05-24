@@ -6,6 +6,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
+import { ChevronDown, Copy } from "lucide-react";
+
 const Faqs = () => {
   return (
     <div className="w-full">
@@ -45,7 +47,7 @@ const Faqs = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row bg-bg-surface border border-r-0 border-border-emphasis rounded-md">
-          <div className="flex-1 flex max-w-125 flex-col justify-between py-14.5 px-12">
+          <div className="flex-1 flex flex-col justify-between py-14.5 px-12">
             <div className="max-w-116 flex flex-col gap-4">
               <h2 className="text-text-primary">
                 Create what’s exciting. Maintain what’s essential.
@@ -57,13 +59,23 @@ const Faqs = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <div className="p-1 bg-bg-elevated border border-border-emphasis rounded-md text-text-primary">
-                <PrimaryButton classname="hover:shadow-none text-text-inversePrimary">
-                  Get Together App
-                </PrimaryButton>
+              <div className="w-full p-1 bg-bg-elevated border border-border-emphasis rounded-md flex flex-row">
+                <div className="flex-1">
+                  <PrimaryButton classname="hover:shadow-none text-text-inversePrimary">
+                    <span className="flex flex-row">
+                      Get Together App <ChevronDown strokeWidth={2} />
+                    </span>
+                  </PrimaryButton>
+                </div>
+                <div className="flex-2 flex items-center py-2 px-3 justify-between text-text-primary">
+                  <div>npm install -g exact-ai</div>
+                  <div>
+                    <Copy className="text-text-secondary cursor-pointer" />
+                  </div>
+                </div>
               </div>
               <span className="text-base text-text-secondary">
-                Or read the documentation
+                Or <span className="underline">read the documentation</span>
               </span>
             </div>
           </div>

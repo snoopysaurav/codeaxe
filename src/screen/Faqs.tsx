@@ -7,8 +7,19 @@ import {
 } from "@/components/ui/accordion";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import { ChevronDown, Copy } from "lucide-react";
+import { Toaster, toast } from "sonner";
 
 const Faqs = () => {
+  const text: string = "npm install -g exact-ai";
+
+  function copyToClipboard() {
+    navigator.clipboard.writeText(text);
+    toast.success("copied to clipboard", {
+      position: "bottom-center",
+      duration: 2000,
+    });
+  }
+
   return (
     <div className="w-full">
       <div className="max-w-360 mx-auto flex flex-col gap-12 p-12">
@@ -68,14 +79,22 @@ const Faqs = () => {
                   </PrimaryButton>
                 </div>
                 <div className="flex-2 flex items-center py-2 px-3 justify-between text-text-primary">
-                  <div>npm install -g exact-ai</div>
                   <div>
-                    <Copy className="text-text-secondary cursor-pointer" />
+                    <span className="text-text-accent">npm</span> install -g
+                    exact-ai
+                  </div>
+                  <div>
+                    <button onClick={copyToClipboard}>
+                      <Copy className="text-text-secondary cursor-pointer" />
+                    </button>
                   </div>
                 </div>
               </div>
               <span className="text-base text-text-secondary">
-                Or <span className="underline">read the documentation</span>
+                Or{" "}
+                <span className="underline cursor-pointer">
+                  read the documentation
+                </span>
               </span>
             </div>
           </div>
@@ -423,6 +442,7 @@ const Faqs = () => {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

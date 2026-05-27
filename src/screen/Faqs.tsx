@@ -15,8 +15,8 @@ const Faqs = () => {
   function copyToClipboard() {
     navigator.clipboard.writeText(text);
     toast.success("copied to clipboard", {
-      position: "bottom-center",
-      duration: 2000,
+      position: "bottom-right",
+      duration: 1000,
     });
   }
 
@@ -113,8 +113,8 @@ const Faqs = () => {
                   height="458.985"
                   rx="19.848"
                   fill="white"
-                  fill-opacity="0.01"
-                  shape-rendering="crispEdges"
+                  fillOpacity="0.01"
+                  shapeRendering="crispEdges"
                 />
               </g>
               <g clip-path="url(#clip0_9_1148)">
@@ -129,7 +129,7 @@ const Faqs = () => {
                   height="9.92401"
                   rx="4.962"
                   fill="#A6A6A6"
-                  fill-opacity="0.5"
+                  fillOpacity="0.5"
                 />
                 <rect
                   x="43.4176"
@@ -138,7 +138,7 @@ const Faqs = () => {
                   height="9.92401"
                   rx="4.962"
                   fill="#A6A6A6"
-                  fill-opacity="0.5"
+                  fillOpacity="0.5"
                 />
                 <rect
                   x="60.7846"
@@ -147,7 +147,7 @@ const Faqs = () => {
                   height="9.92401"
                   rx="4.962"
                   fill="#A6A6A6"
-                  fill-opacity="0.5"
+                  fillOpacity="0.5"
                 />
                 <mask id="path-8-inside-1_9_1148" fill="white">
                   <path d="M6.20251 21.0882C6.20251 12.8668 12.8672 6.20215 21.0885 6.20215H623.42C631.641 6.20215 638.306 12.8668 638.306 21.0882V45.8982H6.20251V21.0882Z" />

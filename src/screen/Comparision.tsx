@@ -1,6 +1,9 @@
 import { comparisonData } from "@/seed/comparisionData";
 import SectionHead from "@/components/SectionHead";
 import { cn } from "@/lib/utils";
+import cursor from "@/assets/cursor.png";
+import copilot from "@/assets/copilot.png";
+
 const Comparision = () => {
   return (
     <div className="bg-bg-surface">
@@ -60,11 +63,11 @@ const Comparision = () => {
                   </th>
                   <th className="p-4 justify-items-center ">
                     {/* Copilot */}
-                    Copilot
+                    <img src={copilot} alt="copilot" />
                   </th>
                   <th className="p-4 justify-items-center">
                     {/* Cursor */}
-                    Cursor
+                    <img src={cursor} alt="cursor" />
                   </th>
                 </tr>
               </thead>
@@ -73,7 +76,7 @@ const Comparision = () => {
                   <tr
                     key={item.feature}
                     className={cn(
-                      "not-last:border-b not-last:border-dashed not-last:border-border-emphasis",
+                      "not-last:border-b not-last:border-dashed not-last:border-border-default",
                       "[&_td:nth-child(2)]:bg-bg-elevated [&_td]:py-6",
                       "[&_td:nth-child(3)]:text-text-secondary",
                       "[&_td:nth-child(4)]:text-text-secondary",

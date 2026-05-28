@@ -1,19 +1,15 @@
 import Comparision from "@/screen/Comparision";
 import Faqs from "@/screen/Faqs";
+import GetStarted from "@/screen/GetStarted";
 import Pricing from "@/screen/Pricing";
 
 const Homepage = () => {
   return (
     <main>
-      <section>
-        <Pricing />
-      </section>
-      <section>
-        <Comparision />
-      </section>
-      <section>
-        <Faqs />
-      </section>
+      <Comparision />
+      <Pricing />
+      <GetStarted />
+      <Faqs />
     </main>
   );
 };

@@ -12,7 +12,7 @@ const StartButton = ({ classname, text, onClick }: propsType) => {
   return (
     <button
       className={cn(
-        "flex flex-row gap-3 text-text-primary py-2 px-3 rounded-md text-base font-medium border border-border-emphasis w-full hover:bg-bg-elevated cursor-pointer",
+        "flex flex-row gap-2 items-center justify-center text-text-primary py-2 px-3 rounded-md text-base font-medium border border-border-emphasis w-full hover:bg-bg-elevated cursor-pointer",
         classname,
       )}
       onClick={onClick}

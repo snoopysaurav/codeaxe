@@ -107,7 +107,8 @@
   --color-border-accent: var(--border-accent);
 
   /* custom shadow */
-  --shadow-white: 0px 0px 0px 6px rgba(255, 255, 255, 0.2)
+  --shadow-white: 0px 0px 0px 6px rgba(255, 255, 255, 0.2);
+
 }
 
 #root {

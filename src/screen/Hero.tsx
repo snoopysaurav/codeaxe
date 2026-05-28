@@ -1,4 +1,6 @@
 import PrimaryButton from "@/components/buttons/PrimaryButton";
+import bgImage from "@/assets/bgImage.png";
+import heroImage from "@/assets/heroImg.png";
 
 const Hero = () => {
   return (
@@ -19,6 +21,20 @@ const Hero = () => {
           <PrimaryButton classname="text-text-primary bg-transparent border border-border-default hover:opacity-75 hover:shadow-none!">
             Watch a 2-min demo
           </PrimaryButton>
+        </div>
+        <div className="mx-auto rounded-sm overflow-hidden relative">
+          <img src={bgImage} className="w-full h-full" />
+          <img
+            src={heroImage}
+            className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-sm"
+          />
+        </div>
+        <div className="flex flex-col gap-8 py-12 px-45 justify-center items-center">
+          <span className="text-xl text-text-primary">
+            Trusted by engineers who can't afford to be wrong.
+            {/* Clients image container */}
+          </span>
+          <div></div>
         </div>
       </div>
     </div>

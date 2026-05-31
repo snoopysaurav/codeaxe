@@ -1,6 +1,7 @@
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import bgImage from "@/assets/bgImage.png";
 import heroImage from "@/assets/heroImg.png";
+import companiesImage from "@/assets/logo-strip-container.png";
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-row items-center justify-center gap-3">
-          <PrimaryButton>Start Coding Free</PrimaryButton>
+          <PrimaryButton classname="">Start Coding Free</PrimaryButton>
           <PrimaryButton classname="text-text-primary bg-transparent border border-border-default hover:opacity-75 hover:shadow-none!">
             Watch a 2-min demo
           </PrimaryButton>
@@ -34,7 +35,9 @@ const Hero = () => {
             Trusted by engineers who can't afford to be wrong.
             {/* Clients image container */}
           </span>
-          <div></div>
+          <div>
+            <img src={companiesImage} alt="companies who trused us" />
+          </div>
         </div>
       </div>
     </div>

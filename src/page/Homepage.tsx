@@ -1,3 +1,4 @@
+import BuiltDifferent from "@/screen/BuiltDifferent";
 import Comparision from "@/screen/Comparision";
 import Faqs from "@/screen/Faqs";
 import GetStarted from "@/screen/GetStarted";
@@ -8,6 +9,7 @@ const Homepage = () => {
   return (
     <main>
       <Hero />
+      <BuiltDifferent />
       <Comparision />
       <Pricing />
       <GetStarted />

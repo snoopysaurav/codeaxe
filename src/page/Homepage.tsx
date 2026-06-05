@@ -4,6 +4,7 @@ import Faqs from "@/screen/Faqs";
 import GetStarted from "@/screen/GetStarted";
 import Hero from "@/screen/Hero";
 import Pricing from "@/screen/Pricing";
+import Testimonials from "@/screen/Testimonials";
 import WhatItDoes from "@/screen/WhatItDoes";
 
 const Homepage = () => {
@@ -13,6 +14,7 @@ const Homepage = () => {
       <BuiltDifferent />
       <WhatItDoes />
       <Comparision />
+      <Testimonials />
       <Pricing />
       <GetStarted />
       <Faqs />
